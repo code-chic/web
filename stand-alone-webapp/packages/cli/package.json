@@ -1,0 +1,20 @@
+{
+  "name": "stand-alone-cli",
+  "version": "0.1.0",
+  "description": "项目辅助工具",
+  "main": "index.js",
+  "repository": "https://github.com/code-chic/web.git/stand-alone-webapp/packages/cli",
+  "author": "code-chic <codechic@9501@163.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.1.0",
+    "cross-spawn": "^7.0.2",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "http-proxy-middleware": "^1.0.3",
+    "minimist": "^1.2.5",
+    "string": "^3.3.3"
+  }
+}

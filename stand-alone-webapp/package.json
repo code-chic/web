@@ -1,0 +1,16 @@
+{
+  "name": "stand-alone-webapp",
+  "version": "0.1.0",
+  "description": "请用一句话描述这个项目",
+  "repository": "https://github.com/code-chic/web.git",
+  "author": "code-chic <codechic9501@163.com>",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "build": "node packages/cli build",
+    "generate": "node packages/cli create",
+    "serve:jd": "node packages/cli serve --open --proxy-url=https://api.jd.com",
+    "serve:bd": "node packages/cli serve --open --proxy-url=https://api.baidu.com",
+    "archive": "node packages/cli archive --f tar.gz"
+  }
+}

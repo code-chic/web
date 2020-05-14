@@ -1,0 +1,9 @@
+# git ignore directory items
+.vscode
+.idea
+node_modules
+dist
+
+# git ignore file items
+package-lock.json
+yarn.lock

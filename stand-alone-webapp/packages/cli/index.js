@@ -36,6 +36,13 @@ command.create.action((module, opts) => {
   runScript("node", rawArgs);
 });
 
+command.serve.action(opts => {
+  const cmdArgs = utils.matchCmdArgs(
+    ["host", "port", "uglify", "open", "watcher", "hot", "proxyUrl"], opts);
+  const rawArgs = GULP_SERVE_ARGS.concat(cmdArgs);
+  runScript("node", rawArgs);
+});
+
 program.usage(appName);
 program.version(`v${appVersion}`, "-V, --version", "显示版本号");
 program.helpOption("-H, --h", "显示帮助信息");

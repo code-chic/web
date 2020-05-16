@@ -20,6 +20,7 @@ serve.description("运行服务");
 serve.option("-h, --host <host>", "服务运行主机地址");
 serve.option("-p, --port <port>", "服务运行端口");
 serve.option("-u, --uglify", "压缩代码");
+serve.option("-o, --open", "自动打开浏览器", false);
 serve.option("-w, --watcher", "开启热编译");
 serve.option("--hot", "开启热重载");
 serve.option("--proxy-url <proxyUrl>", "指定代理地址");

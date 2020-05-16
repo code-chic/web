@@ -31,7 +31,7 @@ Reflect.ownKeys(command).forEach(c => {
 });
 
 command.create.action((module, opts) => {
-  const cmdArgs = utils.matchCmdArgs(["output"], opts);
+  const cmdArgs = utils.matchCmdArgs(["output", "template"], opts);
   const rawArgs = CREATE_ARGS.concat(module, cmdArgs);
   runScript("node", rawArgs);
 });

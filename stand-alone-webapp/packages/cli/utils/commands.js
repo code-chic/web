@@ -4,6 +4,7 @@ const Command = require("commander").Command;
 // = 创建模块指令
 const create = exports.create = new Command("create");
 create.description("创建模块");
+create.option("-t, --template <template>", "模板", "default");
 create.option("-o, --output <output>", "模块创建位置");
 create.arguments("<module>");
 
